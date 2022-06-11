@@ -6,6 +6,15 @@
 
 function chunkArray(array, size) {
     // Code goes here
+    //new array with nested arrays
+    //nestarray.length === size
+    //
+    let chunkArr = []
+    while( array.length> 0) {
+        chunkArr.push(array.slice(0, size))
+        array.splice(0, size)
+    }
+    return chunkArr
 }
 
 

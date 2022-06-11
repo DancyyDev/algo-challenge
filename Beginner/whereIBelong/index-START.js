@@ -11,9 +11,14 @@ than 1(index 0), but less than 2(index 1).
 
 function whereIBelong(arr, num) {
    // Code goes here
-
+   if(arr.length == 0){
+      return 0
+   }
+   for(let i = 0; i < arr.length; i++){
+      if (num <= arr[i]){
+         return i
+      }
+   }
 }
-
-
 
 module.exports = whereIBelong

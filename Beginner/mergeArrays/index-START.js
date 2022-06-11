@@ -10,12 +10,13 @@ function mergeArrays(...arrays) {
     
     arrays.forEach(array => {
         jointArray = [...jointArray, ...array]
+        console.log(jointArray)
     });
-
-    return [...new Set([...jointArray])]
-
     
+    return [...new Set([...jointArray])]  
 }
 
 
 module.exports = mergeArrays
+
+// [1,2],[2,3],[3,4],[4,5]

@@ -9,6 +9,13 @@ don't. E.g
 
 function isAnagram(stringA, stringB) {
     // Code goes here
+    let strA = stringA.split('').sort().join('')
+    let strB = stringB.split('').sort().join('')
+    if( strA === strB){
+        return true
+    }else {
+        return false
+    }
 }
 
 
